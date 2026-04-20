@@ -1,0 +1,536 @@
+html:
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM Sinan – Sleek Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top glass-nav py-3">
+        <div class="container-custom d-flex align-items-center justify-content-between">
+            <a href="#hero" class="brand-logo fw-bold text-decoration-none logo-font">
+                <span class="text-cyan">SM</span> <span class="text-main">SINAN</span>
+            </a>
+            <div class="d-flex align-items-center gap-3">
+                <div class="d-none d-md-flex gap-4 me-4">
+                    <a href="#about"
+                        class="nav-link-custom text-muted-custom text-decoration-none small fw-medium">About</a>
+                    <a href="#projects"
+                        class="nav-link-custom text-muted-custom text-decoration-none small fw-medium">Projects</a>
+                    <a href="#contact"
+                        class="nav-link-custom text-muted-custom text-decoration-none small fw-medium">Contact</a>
+                </div>
+                <button id="theme-toggle" class="theme-btn-minimal" aria-label="Toggle Theme">
+                    <svg id="theme-icon-dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-moon d-none" viewBox="0 0 16 16">
+                        <path
+                            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                    </svg>
+                    <svg id="theme-icon-light" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-minimal container-custom min-vh-100 d-flex align-items-center">
+        <div class="row w-100 mx-0 mt-5 pt-3">
+            <div class="col-lg-7 d-flex flex-column justify-content-center pe-lg-5">
+                <span
+                    class="badge badge-avail text-cyan rounded-pill px-3 py-2 fw-medium align-self-start mb-4">Available
+                    for opportunities</span>
+                <h1 class="hero-title fw-bold text-main mb-3">Hi, I'm<br /><span class="text-cyan">SM</span> <span
+                        class="text-yellow">SINAN</span></h1>
+                <div class="hero-subtitle mb-4 lh-base d-flex align-items-center" style="min-height: 40px;">
+                    <span class="typewriter-text fw-bold fs-4"></span><span
+                        class="typewriter-cursor fw-light fs-4 lh-1">|</span>
+                </div>
+                <p class="hero-desc text-muted-custom w-100 w-lg-75 mb-5 pe-lg-5">A Software Developer</p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="#projects"
+                        class="btn btn-outline-cyan rounded-pill px-4 py-2 fw-medium text-decoration-none">Explore
+                        Projects</a>
+                    <a href="#contact"
+                        class="btn btn-outline-gray rounded-pill px-4 py-2 fw-medium text-decoration-none">Get In
+                        Touch</a>
+                </div>
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center align-items-center mt-5 mt-lg-0">
+                <div class="avatar-container-new">
+                    <div class="avatar-glow"></div>
+                    <!-- Dark Theme Image -->
+                    <img src="hero_Section_Profile.jpeg" alt="SM SINAN" class="hero-avatar-img avatar-dark">
+                    <img src="profile.jpeg?v=3" alt="SM SINAN" class="hero-avatar-img avatar-light">
+                    <div class="float-icon top-right">💻</div>
+                    <div class="float-icon bottom-left">🚀</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 mt-5">
+        <div class="container-custom mt-4">
+            <div class="row gx-lg-5">
+                <!-- Left Column -->
+                <div class="col-lg-4 mb-5 mb-lg-0 pe-lg-4">
+                    <div class="about-avatar-box mb-4 mx-auto text-center">
+                        <img src="hero_Section_Profile.jpeg" alt="SM SINAN" class="about-avatar-img avatar-dark">
+                        <img src="profile.jpeg?v=3" alt="SM SINAN" class="about-avatar-img avatar-light">
+                    </div>
+                    <!-- Short Info -->
+                    <div class="px-3">
+                        <div
+                            class="d-flex justify-content-between border-bottom border-secondary border-opacity-25 pb-3 mb-3">
+                            <span class="text-muted-custom">Name:</span>
+                            <span class="text-main fw-medium">SM Sinan</span>
+                        </div>
+                        <div
+                            class="d-flex justify-content-between border-bottom border-secondary border-opacity-25 pb-3 mb-3">
+                            <span class="text-muted-custom">Job Role:</span>
+                            <span class="text-main fw-medium">Software Engineer</span>
+                        </div>
+                        <div
+                            class="d-flex justify-content-between border-bottom border-secondary border-opacity-25 pb-3 mb-3">
+                            <span class="text-muted-custom">Address:</span>
+                            <span class="text-main fw-medium">Colombo, Sri Lanka</span>
+                        </div>
+                        <div class="d-flex justify-content-between pb-3 mb-4">
+                            <span class="text-muted-custom">Experience:</span>
+                            <span class="text-cyan fw-bold">+15 Projects Completed</span>
+                        </div>
+
+                        <!-- LinkedIn Liquid Button -->
+                        <div class="d-grid mt-2">
+                            <a href="https://www.linkedin.com/in/mohamed-sinan-6b7815361" target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn glass-btn py-3 d-flex align-items-center justify-content-center gap-2 rounded-4 fw-bold">
+                                <i class="bi bi-linkedin fs-5"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                    <div class="px-3 text-center mb-4">
+                    </div>
+                </div>
+                <!-- Right Column -->
+                <div class="col-lg-8 ps-lg-5 border-start border-secondary border-opacity-10">
+                    <div class="about-title-wrapper mb-4 position-relative pt-lg-2">
+                        <h2 class="display-4 fw-bold text-main position-relative z-1 mb-0 font-outfit">About <span
+                                class="text-cyan">Me</span></h2>
+                    </div>
+                    <div class="about-paragraphs text-muted-custom mb-5 lh-lg fs-6">
+                        <p><span class="text-cyan fw-medium">Software Engineer</span> with a Diploma in Information
+                            Technology (completed 2025) and Higher National Diploma in Software Engineering from ESoft
+                            Metro Campus (completed 2026).</p>
+                        <p>Proficient in building responsive websites, dynamic web applications, and desktop solutions
+                            using modern technologies such as <span class="text-cyan fw-medium">C#, .NET, Java, PHP,
+                                JavaScript, MySQL</span>, and AI-assisted tools. Skilled in full-stack web development,
+                            database management, and creating clean, scalable, and high-quality applications.</p>
+                        <p>Passionate about developing efficient solutions and eager to contribute to collaborative
+                            development environments. Currently seeking Associate Software Engineer opportunities in
+                            Colombo.</p>
+                    </div>
+                    <div class="about-details-grid glass-card-minimal p-4 rounded-4">
+                        <div class="row mb-3 pb-3 border-bottom border-secondary border-opacity-10 align-items-center">
+                            <div class="col-sm-3 text-main fw-bold font-outfit">Profile:</div>
+                            <div class="col-sm-9 text-muted-custom small">Software Engineering & Web Development</div>
+                        </div>
+                        <div class="row mb-3 pb-3 border-bottom border-secondary border-opacity-10 align-items-center">
+                            <div class="col-sm-3 text-main fw-bold font-outfit">Domain:</div>
+                            <div class="col-sm-9 text-muted-custom small">Web Applications, Desktop Applications &
+                                Full-Stack Solutions</div>
+                        </div>
+                        <div class="row mb-3 pb-3 border-bottom border-secondary border-opacity-10 align-items-center">
+                            <div class="col-sm-3 text-main fw-bold font-outfit">Education:</div>
+                            <div class="col-sm-9 text-muted-custom small">Higher National Diploma in Software
+                                Engineering</div>
+                        </div>
+                        <div class="row mb-3 pb-3 border-bottom border-secondary border-opacity-10 align-items-center">
+                            <div class="col-sm-3 text-main fw-bold font-outfit">Languages:</div>
+                            <div class="col-sm-9 text-muted-custom small">English, Tamil, Sinhala</div>
+                        </div>
+                        <div class="row mb-3 pb-3 border-bottom border-secondary border-opacity-10 align-items-center">
+                            <div class="col-sm-3 text-main fw-bold font-outfit">Web Tech:</div>
+                            <div class="col-sm-9 text-muted-custom small">HTML, CSS, Bootstrap, Laravel</div>
+                        </div>
+                        <div class="row mb-3 align-items-start">
+                            <div class="col-sm-3 text-main fw-bold font-outfit">Tools & Others:</div>
+                            <div class="col-sm-9 text-muted-custom small lh-base">Figma (UI/UX), AI Agents, Generative
+                                AI, Git, .NET</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="pt-2 pb-5">
+        <div class="container-custom">
+            <h2 class="section-title text-main mb-4">Technical <span class="text-cyan">Skills</span></h2>
+
+            <div class="row g-5">
+                <!-- Box 1 -->
+                <div class="col-md-6">
+                    <div class="glass-card-minimal p-4 p-lg-5 h-100 rounded-4 skill-box">
+                        <h4 class="text-main font-outfit fw-bold mb-4 d-flex align-items-center gap-3">
+                            <i class="bi bi-terminal mt-1 text-cyan fs-5"></i> Programming Languages
+                        </h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">C#</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="col-md-6">
+                    <div class="glass-card-minimal p-4 p-lg-5 h-100 rounded-4 skill-box">
+                        <h4 class="text-main font-outfit fw-bold mb-4 d-flex align-items-center gap-3">
+                            <i class="bi bi-globe mt-1 text-cyan fs-5"></i> Web Technologies
+                        </h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge">HTML</span>
+                            <span class="skill-badge">CSS</span>
+                            <span class="skill-badge">Bootstrap</span>
+                            <span class="skill-badge">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="col-md-6">
+                    <div class="glass-card-minimal p-4 p-lg-5 h-100 rounded-4 skill-box">
+                        <h4 class="text-main font-outfit fw-bold mb-4 d-flex align-items-center gap-3">
+                            <i class="bi bi-database mt-1 text-cyan fs-5"></i> Databases
+                        </h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">Database Design</span>
+                            <span class="skill-badge">Database Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 4 -->
+                <div class="col-md-6">
+                    <div class="glass-card-minimal p-4 p-lg-5 h-100 rounded-4 skill-box">
+                        <h4 class="text-main font-outfit fw-bold mb-4 d-flex align-items-center gap-3">
+                            <i class="bi bi-wrench mt-1 text-cyan fs-5"></i> Tools & Others
+                        </h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge">Figma (UI/UX with AI)</span>
+                            <span class="skill-badge">AI Agents</span>
+                            <span class="skill-badge">Generative AI tools</span>
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">.NET</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="py-5 mt-4 position-relative bento-section">
+        <!-- Liquid Glass Blobs -->
+        <div class="liquid-blob blob-cyan"></div>
+        <div class="liquid-blob blob-yellow"></div>
+
+        <div class="container-custom position-relative z-1">
+            <h2 class="section-title text-main mb-3">Hands-on <span class="text-cyan">Projects</span></h2>
+            <p class="text-muted-custom text-center mb-5 fs-6">A selection of my recent work across web
+                development, desktop applications, and UI/UX design.</p>
+
+            <div class="row g-5">
+                <!-- Project 1 -->
+                <div class="col-md-6">
+                    <div class="bento-card bento-interactive d-flex flex-column h-100 p-4 p-lg-5"
+                        data-bs-title="Velvet Cloth Company Website"
+                        data-bs-img="https://i.pinimg.com/736x/68/4e/09/684e09e8970ffc9ad091f817ad753713.jpg"
+                        data-bs-desc="A premium Full-Stack Web Application for an elite e-commerce clothing brand. It features complete user and admin flows, a sleek dashboard, secure scalable backend, and real-time inventory management synced with immersive UI. Designed for maximum customer conversion and seamless shopping experience."
+                        data-bs-tech="HTML,CSS,Java,PHP,MySQL" data-bs-icon="bi-code-slash"
+                        data-bs-color="bg-accent-blue">
+                        <div class="bento-image-wrapper mb-4 rounded-4 shadow-sm">
+                            <img src="https://i.pinimg.com/736x/68/4e/09/684e09e8970ffc9ad091f817ad753713.jpg"
+                                alt="Velvet Cloth Website" class="bento-img">
+                        </div>
+                        <div class="flex-grow-1 d-flex flex-column text-center align-items-center">
+                            <div class="project-icon-box bg-accent-blue shadow-sm flex-shrink-0 mb-3"
+                                style="width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-code-slash text-white fs-5"></i>
+                            </div>
+                            <h4 class="text-main font-outfit fw-bold w-100">
+                                Velvet Cloth Website
+                            </h4>
+                            <p class="text-muted-custom small mb-4 flex-grow-1 lh-lg">A premium Full-Stack Web
+                                Application for an elite e-commerce brand.</p>
+                            <div class="d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                                <span class="tech-pill">HTML</span>
+                                <span class="tech-pill">CSS</span>
+                                <span class="tech-pill">Java</span>
+                                <span class="tech-pill">PHP</span>
+                                <span class="tech-pill">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6">
+                    <div class="bento-card bento-interactive d-flex flex-column h-100 p-4 p-lg-5"
+                        data-bs-title="Eco-Friendly Travel App"
+                        data-bs-img="https://figmaelements.com/wp-content/uploads/2021/04/figma-camping-ui-kit.png"
+                        data-bs-desc="Comprehensive UI/UX Design for a sustainable travel application focusing on carbon footprint reduction. Features gamified eco-points, intelligent route planning for minimal emissions, and integrated booking for green-certified hotels."
+                        data-bs-tech="Figma,UI/UX,AI Integration" data-bs-icon="bi-phone"
+                        data-bs-color="bg-accent-teal">
+                        <div class="bento-image-wrapper mb-4 rounded-4 shadow-sm">
+                            <img src="https://figmaelements.com/wp-content/uploads/2021/04/figma-camping-ui-kit.png"
+                                alt="Eco-Friendly Travel App" class="bento-img">
+                        </div>
+                        <div class="flex-grow-1 d-flex flex-column text-center align-items-center">
+                            <div class="project-icon-box bg-accent-teal shadow-sm flex-shrink-0 mb-3"
+                                style="width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-phone text-white fs-5"></i>
+                            </div>
+                            <h4 class="text-main font-outfit fw-bold w-100">
+                                Eco-Friendly Travel App
+                            </h4>
+                            <p class="text-muted-custom small mb-4 flex-grow-1 lh-lg">Comprehensive UI/UX Design for a
+                                sustainable travel app focusing on carbon footprint reduction.</p>
+                            <div class="d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                                <span class="tech-pill">Figma</span>
+                                <span class="tech-pill">UI/UX</span>
+                                <span class="tech-pill">AI Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6">
+                    <div class="bento-card bento-interactive d-flex flex-column h-100 p-4 p-lg-5"
+                        data-bs-title="Database Management System"
+                        data-bs-img="https://i.ytimg.com/vi/8LlitCpjoxA/maxresdefault.jpg"
+                        data-bs-desc="Robust Desktop Application for managing complex relational data with intuitive user interfaces. Features advanced querying, data visualization dashboards, and role-based access control for enterprise environments."
+                        data-bs-tech="C#,Desktop App,SQL" data-bs-icon="bi-database" data-bs-color="bg-accent-pink">
+                        <div class="bento-image-wrapper mb-4 rounded-4 shadow-sm">
+                            <img src="https://i.ytimg.com/vi/8LlitCpjoxA/maxresdefault.jpg"
+                                alt="Database Management System" class="bento-img">
+                        </div>
+                        <div class="flex-grow-1 d-flex flex-column text-center align-items-center">
+                            <div class="project-icon-box bg-accent-pink shadow-sm flex-shrink-0 mb-3"
+                                style="width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-database text-white fs-5"></i>
+                            </div>
+                            <h4 class="text-main font-outfit fw-bold w-100">
+                                Database Management
+                            </h4>
+                            <p class="text-muted-custom small mb-4 flex-grow-1 lh-lg">Robust Desktop Application for
+                                managing complex relational data with intuitive user interfaces.</p>
+                            <div class="d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                                <span class="tech-pill">C#</span>
+                                <span class="tech-pill">Desktop App</span>
+                                <span class="tech-pill">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6">
+                    <div class="bento-card bento-interactive d-flex flex-column h-100 p-4 p-lg-5"
+                        data-bs-title="Student Fee Calculation Management"
+                        data-bs-img="https://miro.medium.com/v2/resize:fit:640/format:webp/1*xFjIxWkWr-aHa45DZ7OmPg.png"
+                        data-bs-desc="A command-line based Student Result Management System built using Python. The system allows efficient management of student records, semester-wise marks, and results using JSON-based persistent storage with a clean and structured CLI interface."
+                        data-bs-tech="Python,CLI,JSON" data-bs-icon="bi-calculator" data-bs-color="bg-accent-orange">
+                        <div class="bento-image-wrapper mb-4 rounded-4 shadow-sm">
+                            <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*xFjIxWkWr-aHa45DZ7OmPg.png"
+                                alt="Student Fee Calculation Management System" class="bento-img">
+                        </div>
+                        <div class="flex-grow-1 d-flex flex-column text-center align-items-center">
+                            <div class="project-icon-box bg-accent-orange shadow-sm flex-shrink-0 mb-3"
+                                style="width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-calculator text-white fs-5"></i>
+                            </div>
+                            <h4 class="text-main font-outfit fw-bold w-100">
+                                Student Fee Calculation Management
+                            </h4>
+                            <p class="text-muted-custom small mb-4 flex-grow-1 lh-lg">Specialized application for
+                                accurate profit tracking and complex financial calculations.</p>
+                            <div class="d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                                <span class="tech-pill">C#</span>
+                                <span class="tech-pill">.NET</span>
+                                <span class="tech-pill">Command Line Interface (CLI)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="cta-footer position-relative mt-5 pt-5 pb-4">
+
+        <!-- Ambient Glow Blobs -->
+        <div class="cta-blob cta-blob-cyan"></div>
+        <div class="cta-blob cta-blob-yellow"></div>
+
+        <div class="container-custom position-relative" style="z-index:2">
+
+            <!-- Section Heading -->
+            <h2 class="section-title text-main text-center fw-bold mb-5" style="font-size: 2.5rem;">Contact <span
+                    class="text-cyan">Us</span></h2>
+
+            <!-- Two-Column Row: Left Card + Right Form Card -->
+            <div class="row g-5 align-items-stretch mb-4">
+
+                <!-- LEFT: Reach Out Card -->
+                <div class="col-lg-5">
+                    <div class="cta-left-card h-100 rounded-4 p-4 p-lg-5">
+                        <h2 class="cta-heading fw-bold mb-3">
+                            Let’s Work <span class="text-cyan">Together</span>
+                        </h2>
+                        <p class="text-muted-custom lh-lg mb-4" style="font-size:0.95rem">
+                            Ready to bring your ideas to life? Let's collaborate on something
+                            extraordinary and build something great together.
+                        </p>
+
+                        <!-- Highlight Items -->
+                        <ul class="cta-highlights list-unstyled mb-0">
+                            <li class="cta-highlight-item">
+                                <span class="cta-hi-icon">⚡</span>
+                                <span class="text-muted-custom small">Quick response within 24 hours</span>
+                            </li>
+                            <li class="cta-highlight-item">
+                                <span class="cta-hi-icon">🤝</span>
+                                <span class="text-muted-custom small">Collaborative development process</span>
+                            </li>
+                            <li class="cta-highlight-item">
+                                <span class="cta-hi-icon">✨</span>
+                                <span class="text-muted-custom small">High-quality, scalable solutions</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Get In Touch Form Card -->
+                <div class="col-lg-7">
+                    <div class="cta-form-card h-100 rounded-4 p-4 p-lg-5 position-relative overflow-hidden">
+                        <!-- Inner ambient glow for the form card -->
+                        <div class="cta-form-glow"></div>
+                        <h3 class="fw-semibold text-main mb-4"
+                            style="font-family:'Outfit',sans-serif; font-size:1.3rem; position:relative; z-index:1">
+                            Get in touch
+                        </h3>
+                        <div class="position-relative" style="z-index:1">
+                            <input type="text" id="cta-name" class="cta-input w-100 mb-3" placeholder="Your Name"
+                                autocomplete="name">
+                            <input type="email" id="cta-email" class="cta-input w-100 mb-3" placeholder="your@email.com"
+                                autocomplete="email">
+                            <textarea id="cta-message" class="cta-input cta-textarea w-100 mb-4"
+                                placeholder="Tell me about your project..." rows="5"></textarea>
+                            <a href="mailto:imsinan001@gmail.com" id="cta-submit"
+                                class="cta-submit-btn w-100 rounded-pill fw-semibold d-flex justify-content-center align-items-center text-decoration-none"
+                                style="color: inherit;">
+                                Send Message &nbsp;✈️
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /row -->
+
+            <!-- Info Cards Row -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="cta-info-card rounded-4 p-4 text-center h-100">
+                        <div class="cta-info-icon mb-3 mx-auto">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <p class="fw-bold text-main mb-1 small">Email</p>
+                        <p class="text-muted-custom mb-0" style="font-size:0.82rem">imsinan001@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cta-info-card rounded-4 p-4 text-center h-100">
+                        <div class="cta-info-icon mb-3 mx-auto">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <p class="fw-bold text-main mb-1 small">Phone</p>
+                        <p class="text-muted-custom mb-0" style="font-size:0.82rem">+94 77 272 1704</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cta-info-card rounded-4 p-4 text-center h-100">
+                        <div class="cta-info-icon mb-3 mx-auto">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="fw-bold text-main mb-1 small">Location</p>
+                        <p class="text-muted-custom mb-0" style="font-size:0.82rem">Colombo, Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Icons Row -->
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="https://wa.me/94756307117?text=Hello%20Sir%20😃" target="_blank" rel="noopener noreferrer"
+                    class="text-muted-custom fs-4 social-icon-hover"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-sinan-6b7815361" target="_blank" rel="noopener noreferrer"
+                    class="text-muted-custom fs-4 social-icon-hover"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-muted-custom fs-4 social-icon-hover"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-muted-custom fs-4 social-icon-hover"><i class="bi bi-facebook"></i></a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-4 text-center">
+                <p class="text-muted-custom mb-0" style="font-size:0.82rem">
+                    &copy; 2026. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Liquid Glass Modal -->
+    <div id="projectModal" class="glass-modal text-start">
+        <div class="glass-modal-dialog">
+            <div class="glass-modal-content">
+                <button class="glass-modal-close" id="modalCloseBtn" aria-label="Close"><i
+                        class="bi bi-x-lg"></i></button>
+                <div class="modal-image-container">
+                    <img id="modalImg" src="" alt="Project Preview">
+                </div>
+                <div class="p-4 p-lg-5">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div id="modalIconBox" class="project-icon-box shadow-sm flex-shrink-0"
+                            style="width: 45px; height: 45px;">
+                            <i id="modalIcon" class="bi text-white fs-5"></i>
+                        </div>
+                        <h2 id="modalTitle" class="display-6 font-outfit fw-bold text-main mb-0"></h2>
+                    </div>
+                    <div id="modalTechStack" class="d-flex flex-wrap gap-2 mb-4"></div>
+                    <p id="modalDesc" class="text-muted-custom fs-5 lh-lg mb-0"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
