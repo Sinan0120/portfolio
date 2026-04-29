@@ -53,8 +53,36 @@ html:
                     for opportunities</span>
                 <h1 class="hero-title fw-bold text-main mb-3">Hi, I'm<br /><span class="text-cyan">SM</span> <span
                         class="text-yellow">SINAN</span></h1>
-                <p class="hero-subtitle mb-4 fs-4 text-cyan fw-medium">A Software Developer</p>
-                <p class="hero-desc text-muted-custom w-100 w-lg-75 mb-5 pe-lg-5">Building high-performance, beautiful digital experiences.</p>
+                <p class="hero-subtitle mb-4 fs-4 text-cyan fw-medium">
+                    <span id="typewriter"></span><span style="animation: blink 1s step-end infinite;">|</span>
+                </p>
+                <style>
+                    @keyframes blink {
+                        50% {
+                            opacity: 0;
+                        }
+                    }
+                </style>
+                <script>
+                    (function () {
+                        const words = ["Software Developer", "Frontend Developer", "UI/UX Designer", "Web Developer", "Mobile App Developer"];
+                        let i = 0, j = 0, isDeleting = false;
+                        function type() {
+                            const word = words[i];
+                            const el = document.getElementById('typewriter');
+                            if (!el) return;
+                            el.textContent = word.substring(0, j + (isDeleting ? -1 : 1));
+                            j += isDeleting ? -1 : 1;
+                            let speed = isDeleting ? 50 : 100;
+                            if (!isDeleting && j === word.length) { speed = 2000; isDeleting = true; }
+                            else if (isDeleting && j === 0) { isDeleting = false; i = (i + 1) % words.length; speed = 500; }
+                            setTimeout(type, speed);
+                        }
+                        type();
+                    })();
+                </script>
+                <p class="hero-desc text-muted-custom w-100 w-lg-75 mb-5 pe-lg-5">Building high-performance, beautiful
+                    digital experiences.</p>
                 <div class="d-flex gap-3 flex-wrap">
                     <a href="#projects"
                         class="btn btn-outline-cyan rounded-pill px-4 py-2 fw-medium text-decoration-none">Explore
